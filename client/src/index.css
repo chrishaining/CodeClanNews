@@ -4,7 +4,7 @@ font-weight: lighter;
 }
 
 body {
-  font-family: 'Lilita One', cursive;
+  font-family: 'Verdana', 'Geneva', sans-serif;
   font-weight: lighter;
   text-align: center;
   margin: 0;
@@ -22,7 +22,8 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #6e5f59;
+  background-color: #1306a5;
+  font-weight: bold;
 }
 
 li {

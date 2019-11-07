@@ -24,9 +24,7 @@ class EditJournalistForm extends React.Component {
         const lastName = this.state.lastName.trim();
         const phoneNumber = this.state.phoneNumber.trim();
         const employed = this.state.employed;
-        // if (!firstName || !lastName || !phoneNumber) {
-        //     return
-        // }
+       
         this.props.onJournalistEdit({
             id: id,
             firstName: firstName,

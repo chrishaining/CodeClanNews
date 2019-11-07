@@ -1,6 +1,5 @@
 import React from 'react';
 import JournalistList from './JournalistList';
-import AddJournalistForm from './AddJournalistForm';
 import {Link} from 'react-router-dom'
 
 class JournalistComponent extends React.Component {

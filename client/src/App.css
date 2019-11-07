@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #1306a5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -26,27 +26,25 @@ table {
 }
 td, th {
   border:1px solid black;
-  border-collapse: collapse;
-  border-radius: 10px;
   padding: 5px;
-  /* margin: 0; */
+  background-color: #09e0c3;
 }
 
 th{
-  background-color: #6e5f59;
+  background-color: #1306a5;
   color: white;
 }
 
 tr:hover {
-  background-color: #269ed1;
   color: white;
 }
 
 button {
-  background-color: #6e5f59;
+  background-color: #1306a5;
   color: white;
   border-radius: 10px;
-  font-family: 'Lilita One', cursive;
+  font-family: 'Verdana', 'Geneva', sans-serif;
+  font-weight: bold;
   padding: 10px;
   margin: 10px;
 }
