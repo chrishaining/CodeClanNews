@@ -18,7 +18,7 @@ This full-stack, RESTful app is designed for a news editor. It contains a databa
 
 ## To run the app:
 Once you have git pulled:
-* In the command line, type `createdb newsservice`
+* In the command line, type `createdb news`
 * Open the Server folder using IntelliJ. Run the Server Application file.
 * Open the client folder:
   * `npm install`
