@@ -20,6 +20,11 @@ const ArticleView = ({article , deleteArticle}) => {
     
     const journalist = article["_embedded"].journalist
 
+    // const handleClick = () => {
+    //     // I want to render or redirect to articles list
+    //     history.push("/articles")
+    //   };
+
     return (
         <div>
         < form >
