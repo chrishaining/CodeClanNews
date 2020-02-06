@@ -161,15 +161,13 @@ class NewsContainer extends React.Component {
               render={() => <AddArticleForm onArticleSubmit={this.onArticleSubmit} journalists={this.state.journalists} />} />
 
             <Route exact path="/articles/:id"
-              render={() => <ArticleView onArticleSelected={this.handleSelect} article={this.state.currentArticle}  />} />
+              render={() => <ArticleView onArticleSelected={this.handleSelect} article={this.state.currentArticle} deleteArticle={this.deleteArticle} />} />
 
             <Route exact path="/articles/:id/edit"
               render={() => <EditArticleForm
-                // onArticleSelected={this.handleSelect}
                 onArticleEdit={this.onArticleEdit}
                 article={this.state.currentArticle}
                 journalists={this.state.journalists}
-                // editArticle={this.editArticle}
               />} />
             <Route exact path="/journalists/:id/edit" render={() => 
             <EditJournalistForm onJournalistEdit={this.onJournalistEdit} journalist={this.state.currentJournalist} /> } />

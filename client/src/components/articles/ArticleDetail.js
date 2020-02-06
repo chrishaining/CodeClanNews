@@ -15,7 +15,7 @@ const ArticleDetail = ({ article, onArticleSelected }) => {
   return (
     <tr onClick={handleClick}>
       <td>{article.headline}</td>
-      <td> {journalist.firstName} {journalist.lastName} </td>
+      <td>{journalist.firstName} {journalist.lastName}</td>
       <td>{article.summary}</td>
       <td>{article.date}</td>
       <td>{article.category}</td>
