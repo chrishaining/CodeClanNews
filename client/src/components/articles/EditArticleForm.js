@@ -28,6 +28,7 @@ class EditArticleForm extends Component {
         const story = this.state.story.trim();
         const summary = this.state.summary.trim();
         const category = this.state.category.trim();
+        window.location = '/articles'
 
         this.props.onArticleEdit({
             id: id,
@@ -60,6 +61,7 @@ class EditArticleForm extends Component {
         this.setState({ category: event.target.value })
     }
 
+
     render() {
         return (
             <form onSubmit={this.handleSubmit} >
@@ -73,10 +75,11 @@ class EditArticleForm extends Component {
                 <input type="text" value={this.state.summary} onChange={this.handleSummaryChange} />
                 Category:
                 <input type="text" value={this.state.category} onChange={this.handleCategoryChange} />
-                <button type="submit" value="Post" >Submit changes</button>
+                <button type="submit" value="Post">Submit changes</button>
             </form>
         )
     }
+  
 }
 
 export default EditArticleForm

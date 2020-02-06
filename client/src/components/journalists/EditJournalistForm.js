@@ -24,6 +24,8 @@ class EditJournalistForm extends React.Component {
         const lastName = this.state.lastName.trim();
         const phoneNumber = this.state.phoneNumber.trim();
         const employed = this.state.employed;
+        window.location = '/journalists'
+
        
         this.props.onJournalistEdit({
             id: id,

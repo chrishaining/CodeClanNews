@@ -100,7 +100,7 @@ class AddArticleForm extends Component {
                 <input type="text" value={this.state.summary} onChange={this.handleSummaryChange} />
                 Category:
                 <input type="text" value={this.state.category} onChange={this.handleCategoryChange} />
-                <button type="submit" value="Post" >Add Article</button>
+                <button type="submit" value="Post">Add Article</button>
             </form>
         )
     }
