@@ -137,8 +137,7 @@ class NewsContainer extends React.Component {
       <Router>
         <React.Fragment>
           <NavBar />
-          < h1 > Joke News Inc.
-            "Is it a joke, or is it a weird truth..." </h1>
+          < h1 > Fake News: "Is it a trick, or is it a strange truth?" </h1>
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route
