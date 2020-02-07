@@ -28,6 +28,7 @@ class AddArticleForm extends Component {
         const story = this.state.story.trim();
         const summary = this.state.summary.trim();
         const category = this.state.category.trim();
+        window.location = '/articles';
         if (!headline || !date || !journalist || !story || !summary || !category) {
             return
         }
