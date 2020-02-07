@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link , useHistory } from 'react-router-dom'
 
-const ArticleView = ({ article , deleteArticle}) => {
+const ArticleView = ({article , deleteArticle}) => {
     let history = useHistory();
       
     if (!article) return null
@@ -20,6 +20,11 @@ const ArticleView = ({ article , deleteArticle}) => {
     
     const journalist = article["_embedded"].journalist
 
+    // const handleClick = () => {
+    //     // I want to render or redirect to articles list
+    //     history.push("/articles")
+    //   };
+
     return (
         <div>
         < form >
@@ -33,11 +38,9 @@ const ArticleView = ({ article , deleteArticle}) => {
         <Link to={`/articles/${article.id}/edit`}>
         <button>Edit</button>
         </Link>
-        <button onClick={handleDelete} >Delete</button>
+        <button onClick={handleDelete}>Delete</button>
         </div>
-
     )
-
 }
 
 export default ArticleView;
